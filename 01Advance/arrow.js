@@ -60,4 +60,20 @@ const todos = [{
 
 const thingsDone = todos.filter((todo) => todo.isDone === true).map(todo => todo.title)
 
-console.log(thingsDone)
+// console.log(thingsDone)
+
+
+//Where we cant use arrow function
+const camera = {
+    price: 600,
+    weight: 2000,
+    myDes: function(){ 
+        return `This canon camera is of ${this.price}`
+    }
+    //The below way (using arrow function) will return "This canon camera is of undefined"
+    // myDes: () => { 
+    //     return `This canon camera is of ${this.price}`
+    // }
+}
+
+console.log(camera.myDes());
