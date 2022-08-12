@@ -7,7 +7,8 @@ const convertToRs = (dollar) => {
 }
 
 try {
-    const myValue = convertToRs()
+    const myValue = convertToRs(5)          //this will work
+    //const myValue = convertToRs('five')   //this will throw exception
     console.log(myValue)    
     
 } catch (e) {
