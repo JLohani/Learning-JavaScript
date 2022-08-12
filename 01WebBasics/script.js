@@ -45,8 +45,12 @@
 // document.querySelector('body').appendChild(myNewPara);
 
 //Accessing <button> tag and changing its text/value on click (adding a listner to a button)
-document.querySelector('button').addEventListener('click', (event)=>{
-    console.log('button was pressed');
-    event.target.textContent = 'I was clicked';
-})
+// document.querySelector('button').addEventListener('click', (event)=>{
+//     console.log('button was pressed');
+//     event.target.textContent = 'I was clicked';
+// })
 
+//Track input form
+// document.querySelector('#myForm').addEventListener('input', (event)=>{
+//     console.log(event.target.value);
+// })
