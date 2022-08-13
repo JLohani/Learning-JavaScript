@@ -7,4 +7,12 @@ function myValidation(){
     else{
         console.log("This input is Okay");
     }
-    }
+}
+
+//Form Validation
+
+document.querySelector('.myForm').addEventListener('submit', (event)=> {
+    event.preventDefault(); //removes the parameters from URL
+    console.log(event.target.username.value);
+    event.target.username.value = '';
+})
